@@ -1,5 +1,5 @@
 //fonts
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 // variables
 $pm-col: #090F29;
@@ -10,6 +10,18 @@ $tx-cl: #333333;
 $clr-1: #4f4f4f;
 $clr-2: #3f3f3f;
 
+$primary: #0F4C75;
+$gray1: #A6A6A6;
+$gray2: #666666;
+$gray3: #333333;
+
+$fsz-64: 64px;
+$fsz-24: 24px;
+$fsz-18: 18px;
+
+$fwg-bd: 600;
+$fwg-med: 500;
+$fwg-reg: 400;
 
 
 
@@ -35,10 +47,18 @@ $clr-2: #3f3f3f;
     margin-right: 0.9em;
 }
 
+//text style
+.header-bold{
+    font-size: $fsz-64;
+    font-weight: $fwg-bd;
+    color: $primary;
+}
+
+
 // styles
 body{
-    font-family: 'Montserrat', sans-serif;
-    // background-image: url(/img/bg-sc1.png) !important;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(/img/elipse.png) !important;
     /* Full height */
      height: 100% !important; 
      width: 100% !important;
@@ -46,7 +66,7 @@ body{
     background-repeat: no-repeat !important;
     // background-size: cover !important;
     background-repeat: no-repeat !important;
-    background-position:50% -12% !important;
+    background-position:100% 44% !important;
     scroll-behavior: smooth;
     // background-color: #fff !important;
 }
@@ -77,10 +97,29 @@ body{
      }
 }
 
+//Section1
+.bg-sc1{
+    margin-bottom: 250px;
+}
+.section-1{
+    margin-top: 200px;
+    .title{
+        font-size: $fsz-24;
+        font-weight: $fwg-med;
+        color: $gray1;
+    }
+    .content{
+        font-weight: $fwg-reg;
+        font-size: $fsz-24;
+        color: $gray3;
+        letter-spacing: 1.5%;
+        line-height: 34px;
+    }
 
+}
 //Footer
 footer.footer-area{
-    background-color: $sec-col-dark;
+    background-color: $primary;
     
     ul {
         padding:0;
@@ -185,7 +224,7 @@ footer.footer-area{
         color:#999
        }
        .mini-footer p a {
-        color: $clr-2
+        color: $wh-col
        }
        .mini-footer p a:hover {
         color:#34bfa3
@@ -210,7 +249,7 @@ footer.footer-area{
         padding-right:12px
        }
        .widget-about .contact-details li a {
-        color:$clr-2
+        color:$wh-col
        }
        @media (max-width:991px) {
         .footer-menu {
@@ -220,6 +259,53 @@ footer.footer-area{
 }
 
 
+
+
+@media only screen and (max-width: 1024px){
+    $fsz-64: 44px;
+    $fsz-24: 24px;
+    $fsz-18: 18px;
+
+    .header-bold{
+        font-size: $fsz-64;
+        font-weight: $fwg-bd;
+        color: $primary;
+    }
+}
+
 @media (max-width: 767.98px) { 
+    $fsz-64: 24px;
+    $fsz-24: 20px;
+    $fsz-18: 16px;
+
+
+    body{
+        background-position:32% 56% !important;
+    }
+
+    .bg-sc1{
+        margin-bottom: 200px;
+    }
+
+    .header-bold{
+        font-size: $fsz-64;
+        font-weight: $fwg-bd;
+        color: $primary;
+    }
+    .section-1{
+        margin-top:80px;
+        .title{
+            font-size: $fsz-24;
+            font-weight: $fwg-reg;
+            color: $gray1;
+        }
+        .content{
+            font-weight: $fwg-reg;
+            font-size: $fsz-24;
+            color: $gray3;
+            letter-spacing: 1.5%;
+            line-height: 34px;
+        }
     
+    }
 }

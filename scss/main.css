@@ -1,13 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+.header-bold {
+  font-size: 64px;
+  font-weight: 600;
+  color: #0F4C75;
+}
+
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-image: url(/img/elipse.png) !important;
   /* Full height */
   height: 100% !important;
   width: 100% !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-repeat: no-repeat !important;
-  background-position: 50% -12% !important;
+  background-position: 100% 44% !important;
   scroll-behavior: smooth;
 }
 
@@ -39,8 +46,30 @@ body {
   display: contents !important;
 }
 
+.bg-sc1 {
+  margin-bottom: 250px;
+}
+
+.section-1 {
+  margin-top: 200px;
+}
+
+.section-1 .title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #A6A6A6;
+}
+
+.section-1 .content {
+  font-weight: 400;
+  font-size: 24px;
+  color: #333333;
+  letter-spacing: 1.5%;
+  line-height: 34px;
+}
+
 footer.footer-area {
-  background-color: #dfdfdf;
+  background-color: #0F4C75;
 }
 
 footer.footer-area ul {
@@ -164,7 +193,7 @@ footer.footer-area .mini-footer p {
 }
 
 footer.footer-area .mini-footer p a {
-  color: #3f3f3f;
+  color: #fff;
 }
 
 footer.footer-area .mini-footer p a:hover {
@@ -197,12 +226,49 @@ footer.footer-area .widget-about .contact-details li span {
 }
 
 footer.footer-area .widget-about .contact-details li a {
-  color: #3f3f3f;
+  color: #fff;
 }
 
 @media (max-width: 991px) {
   footer.footer-area .footer-menu {
     padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .header-bold {
+    font-size: 44px;
+    font-weight: 600;
+    color: #0F4C75;
+  }
+}
+
+@media (max-width: 767.98px) {
+  body {
+    background-position: 32% 56% !important;
+  }
+  .bg-sc1 {
+    margin-bottom: 200px;
+  }
+  .header-bold {
+    font-size: 24px;
+    font-weight: 600;
+    color: #0F4C75;
+  }
+  .section-1 {
+    margin-top: 80px;
+  }
+  .section-1 .title {
+    font-size: 20px;
+    font-weight: 400;
+    color: #A6A6A6;
+  }
+  .section-1 .content {
+    font-weight: 400;
+    font-size: 20px;
+    color: #333333;
+    letter-spacing: 1.5%;
+    line-height: 34px;
   }
 }
 /*# sourceMappingURL=main.css.map */
