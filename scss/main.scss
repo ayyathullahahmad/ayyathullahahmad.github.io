@@ -11,11 +11,13 @@ $clr-1: #4f4f4f;
 $clr-2: #3f3f3f;
 
 $primary: #0F4C75;
+$pm-10: #F3FAFF;
 $gray1: #A6A6A6;
 $gray2: #666666;
 $gray3: #333333;
 
 $fsz-64: 64px;
+$fsz-48: 48px;
 $fsz-24: 24px;
 $fsz-18: 18px;
 
@@ -24,7 +26,11 @@ $fwg-med: 500;
 $fwg-reg: 400;
 
 
+$sp-8: 8px; $sp-16: 16px; $sp-24: 24px; $sp-32: 32px;
 
+html {
+    scroll-behavior: smooth;
+  }
 // mixin
 @mixin tombol{
     display: inline-block;
@@ -54,6 +60,46 @@ $fwg-reg: 400;
     color: $primary;
 }
 
+.ct-header{
+    font-size: $fsz-48;
+    font-weight: $fwg-med;
+}
+.ct{
+    font-weight: $fwg-reg;
+        font-size: $fsz-24;
+        color: $gray3;
+        letter-spacing: 1.5%;
+        line-height: 34px;
+}
+.ct-caption{
+    font-size: $fsz-18;
+    font-weight: $fwg-reg;
+    color: $gray2;
+}
+
+.mr-bt-8{
+    margin-bottom: $sp-8
+}
+.mr-bt-16{
+    margin-bottom: $sp-16;
+}
+.mr-bt-24{
+    margin-bottom: $sp-24;
+}
+.mr-bt-32{
+    margin-bottom: $sp-32;
+}
+.mr-tp-32{
+    margin-top: $sp-32;
+}
+.mr-tp-64{
+    margin-top: 64px;
+}
+
+
+
+
+
 
 // styles
 body{
@@ -66,7 +112,7 @@ body{
     background-repeat: no-repeat !important;
     // background-size: cover !important;
     background-repeat: no-repeat !important;
-    background-position:100% 44% !important;
+    background-position:100% 20% !important;
     scroll-behavior: smooth;
     // background-color: #fff !important;
 }
@@ -77,10 +123,10 @@ body{
     font-weight: 500;
     
     a{
-        color: $sec-col-dark;
+        color: $gray2;
 
         &:hover{
-            color: $clr-2;
+            color: $primary;
         }
     }
 
@@ -102,7 +148,7 @@ body{
     margin-bottom: 250px;
 }
 .section-1{
-    margin-top: 200px;
+    margin-top: 125px;
     .title{
         font-size: $fsz-24;
         font-weight: $fwg-med;
@@ -116,7 +162,70 @@ body{
         line-height: 34px;
     }
 
+    @mixin rect-theme($theme: $wh-col ){
+        color: $theme;
+        background-color: $primary;
+        border:unset;
+        transition: .2s ease-in-out 0s;
+        margin-left: 8px;
+        margin-right: 0px;
+        font-size: 32px;
+        text-decoration: unset;
+        text-decoration: none
+    }
+    .rect-icon-linkedin{
+        @include rect-theme;
+        margin-left: 0px;
+    }
+    .rect-icon-linkedin:hover{
+        @include rect-theme;
+        color: #0e76a8;
+        background-color: #e6f5ff;
+        transform: scale(1.2)
+        
+    }
+    .rect-icon-wa{
+        @include rect-theme;
+    }
+    .rect-icon-wa:hover{
+        @include rect-theme;
+        color: #128c7e;
+        background-color: #e6f5ff;
+        transform: scale(1.2)
+    }
+
 }
+
+.sc-2{
+    background-color: $pm-10;
+    padding-top: 68px;
+    padding-bottom: 200px;
+    .title-sc2{
+        margin-bottom: 64px;
+    }
+
+    .box-project{
+        margin-bottom: 24px;
+        margin-top: 24px;
+    }
+    .link-action{
+        margin-top: 24px;
+        font-size: $fsz-24;
+        font-weight: $fwg-med;
+        color: $primary !important;
+        transition: .2s ease-in-out 0s;
+
+        a{
+            color: $primary !important;
+        }
+    }
+    .link-action:hover{
+        transform: scale(1.05);
+        margin-left: 12px;
+    }
+}
+
+
 //Footer
 footer.footer-area{
     background-color: $primary;
@@ -274,13 +383,14 @@ footer.footer-area{
 }
 
 @media (max-width: 767.98px) { 
-    $fsz-64: 24px;
+    $fsz-64: 30px;
+    $fsz-48: 28px;
     $fsz-24: 20px;
     $fsz-18: 16px;
 
 
     body{
-        background-position:32% 56% !important;
+        background-position:32% 30% !important;
     }
 
     .bg-sc1{
@@ -292,6 +402,26 @@ footer.footer-area{
         font-weight: $fwg-bd;
         color: $primary;
     }
+    .ct-header{
+        font-size: $fsz-48;
+        font-weight: $fwg-med;
+        margin-top: 12px;;
+    }
+    .ct{
+        font-weight: $fwg-reg;
+            font-size: $fsz-24;
+            color: $gray3;
+            letter-spacing: 1.5%;
+            line-height: 34px;
+    }
+    .ct-caption{
+        font-size: $fsz-18;
+        font-weight: $fwg-reg;
+        color: $gray2;
+    }
+
+
+    //section1
     .section-1{
         margin-top:80px;
         .title{
@@ -308,4 +438,35 @@ footer.footer-area{
         }
     
     }
+
+
+    //section2    
+    .sc-2{
+        padding-top: 24px;
+        padding-bottom: 200px;
+        .title-sc2{
+            margin-bottom: 8px;
+        }
+    
+        .box-project{
+            margin-bottom: 24px;
+            margin-top: 24px;
+        }
+        .link-action{
+            margin-top: 24px;
+            font-size: $fsz-24;
+            font-weight: $fwg-med;
+            color: $primary !important;
+            transition: .2s ease-in-out 0s;
+    
+            a{
+                color: $primary !important;
+            }
+        }
+        .link-action:hover{
+            transform: scale(1.05);
+            margin-left: 12px;
+        }
+    }
+
 }
