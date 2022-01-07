@@ -197,7 +197,7 @@ body{
 }
 
 .sc-2{
-    background-color: $pm-10;
+    // background-color: $pm-10;
     padding-top: 68px;
     padding-bottom: 200px;
     .title-sc2{
@@ -205,8 +205,10 @@ body{
     }
 
     .box-project{
-        margin-bottom: 24px;
-        margin-top: 24px;
+        margin: 8px 0px;
+        padding: 16px 0px;
+        background-color: #F5F5F5;
+        border-radius: 6px;
     }
     .link-action{
         margin-top: 24px;
@@ -384,9 +386,9 @@ footer.footer-area{
 
 @media (max-width: 767.98px) { 
     $fsz-64: 30px;
-    $fsz-48: 28px;
-    $fsz-24: 20px;
-    $fsz-18: 16px;
+    $fsz-48: 24px;
+    $fsz-24: 16px;
+    $fsz-18: 14px;
 
 
     body{
@@ -412,7 +414,7 @@ footer.footer-area{
             font-size: $fsz-24;
             color: $gray3;
             letter-spacing: 1.5%;
-            line-height: 34px;
+            line-height: 20px;
     }
     .ct-caption{
         font-size: $fsz-18;

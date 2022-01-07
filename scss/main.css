@@ -177,7 +177,6 @@ body {
 }
 
 .sc-2 {
-  background-color: #F3FAFF;
   padding-top: 68px;
   padding-bottom: 200px;
 }
@@ -187,8 +186,10 @@ body {
 }
 
 .sc-2 .box-project {
-  margin-bottom: 24px;
-  margin-top: 24px;
+  margin: 8px 0px;
+  padding: 16px 0px;
+  background-color: #F5F5F5;
+  border-radius: 6px;
 }
 
 .sc-2 .link-action {
@@ -398,19 +399,19 @@ footer.footer-area .widget-about .contact-details li a {
     color: #0F4C75;
   }
   .ct-header {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 500;
     margin-top: 12px;
   }
   .ct {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     color: #333333;
     letter-spacing: 1.5%;
-    line-height: 34px;
+    line-height: 20px;
   }
   .ct-caption {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     color: #666666;
   }
@@ -418,13 +419,13 @@ footer.footer-area .widget-about .contact-details li a {
     margin-top: 80px;
   }
   .section-1 .title {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     color: #A6A6A6;
   }
   .section-1 .content {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     color: #333333;
     letter-spacing: 1.5%;
     line-height: 34px;
@@ -442,7 +443,7 @@ footer.footer-area .widget-about .contact-details li a {
   }
   .sc-2 .link-action {
     margin-top: 24px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     color: #0F4C75 !important;
     -webkit-transition: .2s ease-in-out 0s;
