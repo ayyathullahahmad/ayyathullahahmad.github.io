@@ -11,6 +11,7 @@ $clr-1: #4f4f4f;
 $clr-2: #3f3f3f;
 
 $primary: #0F4C75;
+$secondary: #042032;
 $pm-10: #F3FAFF;
 $gray1: #A6A6A6;
 $gray2: #666666;
@@ -18,8 +19,12 @@ $gray3: #333333;
 
 $fsz-64: 64px;
 $fsz-48: 48px;
+$fsz-30: 30px;
 $fsz-24: 24px;
 $fsz-18: 18px;
+$fsz-16: 16px;
+$fsz-14: 14px;
+$fsz-10: 10px;
 
 $fwg-bd: 600;
 $fwg-med: 500;
@@ -53,9 +58,18 @@ html {
     margin-right: 0.9em;
 }
 
+.btn-link-custom{
+    color: $primary;
+    padding: unset;
+        &:hover{
+            color: $secondary;
+            text-decoration: unset;
+        }
+}
+
 //text style
 .header-bold{
-    font-size: $fsz-64;
+    font-size: $fsz-48;
     font-weight: $fwg-bd;
     color: $primary;
 }
@@ -65,16 +79,22 @@ html {
     font-weight: $fwg-med;
 }
 .ct{
-    font-weight: $fwg-reg;
+    font-weight: $fwg-med;
         font-size: $fsz-24;
         color: $gray3;
         letter-spacing: 1.5%;
         line-height: 34px;
 }
 .ct-caption{
-    font-size: $fsz-18;
+    margin-top: 8px;
+    font-size: $fsz-14;
     font-weight: $fwg-reg;
-    color: $gray2;
+    color: $gray1;
+}
+.title{
+    font-size: $fsz-18;
+    font-weight: $fwg-med;
+    color: $gray1;
 }
 
 .mr-bt-8{
@@ -89,11 +109,21 @@ html {
 .mr-bt-32{
     margin-bottom: $sp-32;
 }
+.mr-tp-8{
+    margin-top: $sp-8;
+}
 .mr-tp-32{
     margin-top: $sp-32;
 }
 .mr-tp-64{
     margin-top: 64px;
+}
+.mr-rg-16{
+    margin-right: $sp-16;
+}
+
+.im-project{
+    border: unset;
 }
 
 
@@ -104,15 +134,14 @@ html {
 // styles
 body{
     font-family: 'Poppins', sans-serif;
-    background-image: url(/img/elipse.png) !important;
+    background-image: url(/img/bg-test.png) ;
     /* Full height */
-     height: 100% !important; 
-     width: 100% !important;
-    background-position: center !important;
+     height: 33,333% !important; 
+     width: 33,333% !important;
     background-repeat: no-repeat !important;
     // background-size: cover !important;
     background-repeat: no-repeat !important;
-    background-position:100% 20% !important;
+    background-position:100% -20% ;
     scroll-behavior: smooth;
     // background-color: #fff !important;
 }
@@ -150,13 +179,13 @@ body{
 .section-1{
     margin-top: 125px;
     .title{
-        font-size: $fsz-24;
+        font-size: $fsz-18;
         font-weight: $fwg-med;
         color: $gray1;
     }
     .content{
         font-weight: $fwg-reg;
-        font-size: $fsz-24;
+        font-size: $fsz-16;
         color: $gray3;
         letter-spacing: 1.5%;
         line-height: 34px;
@@ -201,7 +230,7 @@ body{
     padding-top: 68px;
     padding-bottom: 200px;
     .title-sc2{
-        margin-bottom: 64px;
+        margin-bottom: 32px;
     }
 
     .box-project{
@@ -370,6 +399,22 @@ footer.footer-area{
 }
 
 
+@media only screen and (max-width: 1600px){
+   
+    body{
+        background-size: 80%;
+        background-position:100% -5% ;
+    }
+
+}
+@media only screen and (max-width: 1200px){
+   
+    body{
+        background-size: 75%;
+        background-position:100% 21% ;
+    }
+
+}
 
 
 @media only screen and (max-width: 1024px){
@@ -382,21 +427,34 @@ footer.footer-area{
         font-weight: $fwg-bd;
         color: $primary;
     }
-}
+    body{
+        background-size: 75%;
+        background-position:100% 4% ;
+    }
 
+}
+@media only screen and (max-width: 991px){
+   
+    body{
+        background-image: url(/img/bg-test2.png) ;
+        background-position:50% 0% ;
+        background-size: 200%;
+    }
+
+}
 @media (max-width: 767.98px) { 
     $fsz-64: 30px;
     $fsz-48: 24px;
     $fsz-24: 16px;
     $fsz-18: 14px;
 
-
-    body{
-        background-position:32% 30% !important;
+    .btn-link-custom{
+        font-size: $fsz-18;
     }
+   
 
     .bg-sc1{
-        margin-bottom: 200px;
+        margin-bottom: 80px;
     }
 
     .header-bold{
@@ -404,28 +462,24 @@ footer.footer-area{
         font-weight: $fwg-bd;
         color: $primary;
     }
-    .ct-header{
-        font-size: $fsz-48;
-        font-weight: $fwg-med;
-        margin-top: 12px;;
-    }
     .ct{
-        font-weight: $fwg-reg;
-            font-size: $fsz-24;
-            color: $gray3;
-            letter-spacing: 1.5%;
-            line-height: 20px;
+        font-weight: $fwg-med;
+        font-size: $fsz-48;
+        color: $gray3;
+        letter-spacing: 1.5%;
+        line-height: 34px;
     }
     .ct-caption{
-        font-size: $fsz-18;
+        margin-top: 8px;
+        font-size: $fsz-10;
         font-weight: $fwg-reg;
-        color: $gray2;
+        color: $gray1;
     }
 
 
     //section1
     .section-1{
-        margin-top:80px;
+        margin-top:40px;
         .title{
             font-size: $fsz-24;
             font-weight: $fwg-reg;
@@ -438,6 +492,38 @@ footer.footer-area{
             letter-spacing: 1.5%;
             line-height: 34px;
         }
+        @mixin rect-theme($theme: $wh-col ){
+            color: $theme;
+            background-color: $primary;
+            border:unset;
+            transition: .2s ease-in-out 0s;
+            margin-left: 8px;
+            margin-right: 0px;
+            font-size: 24px;
+            text-decoration: unset;
+            text-decoration: none
+        }
+        .rect-icon-linkedin{
+            @include rect-theme;
+            margin-left: 0px;
+        }
+        .rect-icon-linkedin:hover{
+            @include rect-theme;
+            color: #0e76a8;
+            background-color: #e6f5ff;
+            transform: scale(1.2)
+            
+        }
+        .rect-icon-wa{
+            @include rect-theme;
+        }
+        .rect-icon-wa:hover{
+            @include rect-theme;
+            color: #128c7e;
+            background-color: #e6f5ff;
+            transform: scale(1.2)
+        }
+        
     
     }
 
