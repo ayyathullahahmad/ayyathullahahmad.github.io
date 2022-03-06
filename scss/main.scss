@@ -31,7 +31,7 @@ $fwg-med: 500;
 $fwg-reg: 400;
 
 
-$sp-8: 8px; $sp-16: 16px; $sp-24: 24px; $sp-32: 32px;
+$sp-8: 8px; $sp-16: 16px; $sp-24: 24px; $sp-32: 32px; $sp-64: 64px;
 
 html {
     scroll-behavior: smooth;
@@ -85,6 +85,13 @@ html {
         letter-spacing: 1.5%;
         line-height: 34px;
 }
+.ct-pm{
+    font-weight: $fwg-med;
+        font-size: $fsz-24;
+        color: $primary;
+        letter-spacing: 1.5%;
+        line-height: 34px;
+}
 .ct-caption{
     margin-top: 8px;
     font-size: $fsz-14;
@@ -96,6 +103,7 @@ html {
     font-weight: $fwg-med;
     color: $gray1;
 }
+
 
 .mr-bt-8{
     margin-bottom: $sp-8
@@ -141,7 +149,7 @@ body{
     background-repeat: no-repeat !important;
     // background-size: cover !important;
     background-repeat: no-repeat !important;
-    background-position:100% -11% ;
+    background-position:100% -6% ;
     scroll-behavior: smooth;
     // background-color: #fff !important;
 }
@@ -222,13 +230,22 @@ body{
         background-color: #e6f5ff;
         transform: scale(1.2)
     }
+    .rect-icon-db{
+        @include rect-theme;
+    }
+    .rect-icon-db:hover{
+        @include rect-theme;
+        color: #ea4c89;
+        background-color: #e6f5ff;
+        transform: scale(1.2)
+    }
 
 }
 
 .sc-2{
     // background-color: $pm-10;
     padding-top: 68px;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
     .title-sc2{
         margin-bottom: 32px;
     }
@@ -255,6 +272,23 @@ body{
         margin-left: 12px;
     }
 }
+
+.sc-3{
+    background-color: #EAF3FC;
+    padding: 84px 0 0 0;
+}
+.sc-4{
+    padding: 16px;
+    margin-bottom: $sp-32;
+    margin-top: $sp-32;
+}
+
+
+.card-contact{
+    background-color: #C2E4FF;
+    padding: $sp-16;
+}
+
 
 
 //Footer
@@ -405,6 +439,7 @@ footer.footer-area{
         background-size: 80%;
         background-position:100% -5% ;
     }
+    
 
 }
 @media only screen and (max-width: 1200px){
@@ -439,6 +474,14 @@ footer.footer-area{
         background-image: url(/img/bg-test2.png) ;
         background-position:50% 0% ;
         background-size: 200%;
+    }
+    .sc-3{
+        background-color: #EAF3FC;
+        padding: 32px 0 0 0;
+    }
+    .sc-4{
+        margin-bottom: $sp-32;
+        margin-top: $sp-32;
     }
 
 }
@@ -531,7 +574,7 @@ footer.footer-area{
     //section2    
     .sc-2{
         padding-top: 24px;
-        padding-bottom: 200px;
+        padding-bottom: 80px;
         .title-sc2{
             margin-bottom: 8px;
         }
@@ -555,6 +598,11 @@ footer.footer-area{
             transform: scale(1.05);
             margin-left: 12px;
         }
+    }
+
+    .sc-3{
+        background-color: #EAF3FC;
+        padding: 32px 0 0 0;
     }
 
 }

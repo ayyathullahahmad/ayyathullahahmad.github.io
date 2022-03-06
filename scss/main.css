@@ -32,6 +32,14 @@ html {
   line-height: 34px;
 }
 
+.ct-pm {
+  font-weight: 500;
+  font-size: 24px;
+  color: #0F4C75;
+  letter-spacing: 1.5%;
+  line-height: 34px;
+}
+
 .ct-caption {
   margin-top: 8px;
   font-size: 14px;
@@ -89,7 +97,7 @@ body {
   width: 33,333% !important;
   background-repeat: no-repeat !important;
   background-repeat: no-repeat !important;
-  background-position: 100% -11%;
+  background-position: 100% -6%;
   scroll-behavior: smooth;
 }
 
@@ -204,9 +212,39 @@ body {
           transform: scale(1.2);
 }
 
+.section-1 .rect-icon-db {
+  color: #fff;
+  background-color: #0F4C75;
+  border: unset;
+  -webkit-transition: .2s ease-in-out 0s;
+  transition: .2s ease-in-out 0s;
+  margin-left: 8px;
+  margin-right: 0px;
+  font-size: 32px;
+  text-decoration: unset;
+  text-decoration: none;
+}
+
+.section-1 .rect-icon-db:hover {
+  color: #fff;
+  background-color: #0F4C75;
+  border: unset;
+  -webkit-transition: .2s ease-in-out 0s;
+  transition: .2s ease-in-out 0s;
+  margin-left: 8px;
+  margin-right: 0px;
+  font-size: 32px;
+  text-decoration: unset;
+  text-decoration: none;
+  color: #ea4c89;
+  background-color: #e6f5ff;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .sc-2 {
   padding-top: 68px;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 }
 
 .sc-2 .title-sc2 {
@@ -237,6 +275,22 @@ body {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   margin-left: 12px;
+}
+
+.sc-3 {
+  background-color: #EAF3FC;
+  padding: 84px 0 0 0;
+}
+
+.sc-4 {
+  padding: 16px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+
+.card-contact {
+  background-color: #C2E4FF;
+  padding: 16px;
 }
 
 footer.footer-area {
@@ -438,6 +492,14 @@ footer.footer-area .widget-about .contact-details li a {
     background-position: 50% 0%;
     background-size: 200%;
   }
+  .sc-3 {
+    background-color: #EAF3FC;
+    padding: 32px 0 0 0;
+  }
+  .sc-4 {
+    margin-bottom: 32px;
+    margin-top: 32px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -539,7 +601,7 @@ footer.footer-area .widget-about .contact-details li a {
   }
   .sc-2 {
     padding-top: 24px;
-    padding-bottom: 200px;
+    padding-bottom: 80px;
   }
   .sc-2 .title-sc2 {
     margin-bottom: 8px;
@@ -563,6 +625,10 @@ footer.footer-area .widget-about .contact-details li a {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
     margin-left: 12px;
+  }
+  .sc-3 {
+    background-color: #EAF3FC;
+    padding: 32px 0 0 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
