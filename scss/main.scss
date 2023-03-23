@@ -566,6 +566,17 @@ footer.footer-area{
             background-color: #e6f5ff;
             transform: scale(1.2)
         }
+
+
+        .rect-icon-db{
+            @include rect-theme;
+        }
+        .rect-icon-db:hover{
+            @include rect-theme;
+            color: #ea4c89;
+            background-color: #e6f5ff;
+            transform: scale(1.2)
+        }
         
     
     }
