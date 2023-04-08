@@ -91,6 +91,10 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.image-bg-home {
   background-image: url(/img/bg-test.png);
   /* Full height */
   height: 33,333% !important;
@@ -98,7 +102,6 @@ body {
   background-repeat: no-repeat !important;
   background-repeat: no-repeat !important;
   background-position: 100% -6%;
-  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -461,14 +464,14 @@ footer.footer-area .widget-about .contact-details li a {
 }
 
 @media only screen and (max-width: 1600px) {
-  body {
+  .image-bg-home {
     background-size: 80%;
     background-position: 100% -5%;
   }
 }
 
 @media only screen and (max-width: 1200px) {
-  body {
+  .image-bg-home {
     background-size: 75%;
     background-position: 100% 2%;
   }
@@ -480,14 +483,14 @@ footer.footer-area .widget-about .contact-details li a {
     font-weight: 600;
     color: #0F4C75;
   }
-  body {
+  .image-bg-home {
     background-size: 75%;
     background-position: 100% 4%;
   }
 }
 
 @media only screen and (max-width: 991px) {
-  body {
+  .image-bg-home {
     background-image: url(/img/bg-test2.png);
     background-position: 50% 0%;
     background-size: 200%;
