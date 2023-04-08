@@ -281,7 +281,7 @@ body {
 }
 
 .sc-3 {
-  background-color: #EAF3FC;
+  background-color: #DFFFDE;
   padding: 84px 0 0 0;
 }
 
@@ -289,6 +289,10 @@ body {
   padding: 16px;
   margin-bottom: 32px;
   margin-top: 32px;
+}
+
+.explr-1 {
+  background-color: #D4EAFF;
 }
 
 .card-contact {
@@ -496,7 +500,6 @@ footer.footer-area .widget-about .contact-details li a {
     background-size: 200%;
   }
   .sc-3 {
-    background-color: #EAF3FC;
     padding: 32px 0 0 0;
   }
   .sc-4 {
@@ -658,7 +661,6 @@ footer.footer-area .widget-about .contact-details li a {
     margin-left: 12px;
   }
   .sc-3 {
-    background-color: #EAF3FC;
     padding: 32px 0 0 0;
   }
 }
