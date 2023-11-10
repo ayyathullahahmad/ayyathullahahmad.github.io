@@ -1,5 +1,6 @@
 //fonts
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;1,6..12,400&family=Poppins:wght@400;500;700&display=swap');
 
 // variables
 $pm-col: #090F29;
@@ -17,6 +18,7 @@ $gray1: #A6A6A6;
 $gray2: #666666;
 $gray3: #333333;
 
+$fsz-120: 120px;
 $fsz-64: 64px;
 $fsz-48: 48px;
 $fsz-30: 30px;
@@ -69,13 +71,13 @@ html {
 
 //text style
 .header-bold{
-    font-size: $fsz-48;
+    font-size: $fsz-120;
     font-weight: $fwg-bd;
     color: $primary;
 }
 
 .ct-header{
-    font-size: $fsz-48;
+    font-size: $fsz-64;
     font-weight: $fwg-med;
 }
 .ct{
@@ -101,7 +103,7 @@ html {
 .title{
     font-size: $fsz-18;
     font-weight: $fwg-med;
-    color: $gray1;
+    color: $secondary;
 }
 
 
@@ -148,16 +150,180 @@ body{
     scroll-behavior: smooth;
     // background-color: #fff !important;
 }
-.image-bg-home{
-    background-image: url(/img/bg-test.png) ;
-    /* Full height */
-     height: 33,333% !important; 
-     width: 33,333% !important;
-    background-repeat: no-repeat !important;
-    // background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-position:100% -6% ;
+.wrap-bg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
+.image-bg-home{
+    background-image: url(/img/circle.svg) ;
+    // /* Full height */
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center;
+    width: 50vh;
+    height: 50vh;
+
+    background-repeat: no-repeat;
+    background-size: auto;
+    animation: loader 24s linear infinite;
+    
+    position: absolute;
+}
+
+.gradient2{
+    font-size: $fsz-18;
+    font-weight: $fwg-med;
+    color: $secondary;
+  }
+//animated bg
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .gradient {
+    opacity: 70%;
+    --size: 250px;
+    left: -20%;
+    --speed: 120s;
+    --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    filter: blur(calc(var(--size) / 4));
+    background-image: linear-gradient(hsla(158, 79%, 57%, 0.85), hsl(218, 62%, 55%));
+    animation: rotate var(--speed) var(--easing) alternate infinite;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  
+  @media (min-width: 720px) {
+    .gradient {
+      --size: 500px;
+      left: 20%;
+    }
+  }
+  
+  //anim-scroll
+  #mouse-scroll {
+    style: block;
+  }
+  #mouse-scroll {
+    position: absolute;
+    margin-top: 120px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    z-index: 9999;
+  }
+  #mouse-scroll span{
+    display: block;
+    width: 5px; 
+    height: 5px;
+    -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+         transform: rotate(45deg);
+         transform: rotate(45deg);
+    border-right: 2px solid $primary; 
+    border-bottom: 2px solid $primary;
+    margin: 0 0 3px 5px;
+  }
+  #mouse-scroll .mouse {
+    height: 21px;
+    width: 14px;
+    border-radius: 10px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    border: 2px solid $primary;
+    top: 170px;
+  }
+  #mouse-scroll .down-arrow-1 {
+    margin-top: 6px;
+  }
+  #mouse-scroll .down-arrow-1, #mouse-scroll .down-arrow-2, #mouse-scroll .down-arrow-3 {
+    -webkit-animation: mouse-scroll 1s infinite; 
+      -moz-animation: mouse-scroll 1s infinite;
+  }
+  #mouse-croll .down-arrow-1 {
+     -webkit-animation-delay: .1s; 
+     -moz-animation-delay: .1s;
+     -webkit-animation-direction: alternate;
+  }
+  #mouse-scroll .down-arrow-2 {
+    -webkit-animation-delay: .2s; 
+    -moz-animation-delay: .2s;
+    -webkit-animation-direction: alternate;
+  }
+  #mouse-scroll .down-arrow-3 {
+     -webkit-animation-delay: .3s;
+     -moz-animation-dekay: .3s;
+     -webkit-animation-direction: alternate;
+  }
+  #mouse-scroll .mouse-in {
+    height: 5px;
+    width: 2px;
+    display: block; 
+    margin: 5px auto;
+    background: $primary;
+    position: relative;
+  }
+  #mouse-scroll .mouse-in {
+   -webkit-animation: animated-mouse 1.2s ease infinite;
+    moz-animation: mouse-animated 1.2s ease infinite;
+  }
+  
+  @-webkit-keyframes animated-mouse {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+    100% {
+       opacity: 0;
+      -webkit-transform: translateY(6px);
+      -ms-transform: translateY(6px);
+      transform: translateY(6px);
+    }
+  }
+  @-webkit-keyframes mouse-scroll {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: .5;
+    }
+    100% {
+      opacity: 1;
+    } 
+  }
+  @keyframes mouse-scroll {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  //end anim scroll
+//textmorp
+//donemorp
+  
+  /* This is just to transition when you change the viewport size. */
+  * {
+    transition: all 0.25s ease-out;
+  }
+  
+
+
 
 //Navbar
 .navbar{
@@ -194,7 +360,6 @@ body{
     .title{
         font-size: $fsz-18;
         font-weight: $fwg-med;
-        color: $gray1;
     }
     .content{
         font-weight: $fwg-reg;
@@ -245,6 +410,10 @@ body{
         transform: scale(1.2)
     }
 
+}
+.sc-card{
+    padding-top: 68px;
+    padding-bottom: 24px;
 }
 
 .sc-2{
@@ -445,8 +614,8 @@ footer.footer-area{
    
     
     .image-bg-home{
-        background-size: 80%;
-        background-position:100% -5% ;
+        // background-size: 80%;
+        // background-position:100% -5% ;
     }
     
 
@@ -454,8 +623,8 @@ footer.footer-area{
 @media only screen and (max-width: 1200px){
    
     .image-bg-home{
-        background-size: 75%;
-        background-position:100% 2% ;
+        // background-size: 75%;
+        // background-position:100% 2% ;
     }
     
 
@@ -463,7 +632,7 @@ footer.footer-area{
 
 
 @media only screen and (max-width: 1024px){
-    $fsz-64: 44px;
+    $fsz-64: 80px;
     $fsz-24: 24px;
     $fsz-18: 18px;
 
@@ -473,17 +642,17 @@ footer.footer-area{
         color: $primary;
     }
     .image-bg-home{
-        background-size: 75%;
-        background-position:100% 4% ;
+        // background-size: 75%;
+        // background-position:100% 4% ;
     }
 
 }
 @media only screen and (max-width: 991px){
    
     .image-bg-home{
-        background-image: url(/img/bg-test2.png) ;
-        background-position:50% 0% ;
-        background-size: 200%;
+        // background-image: url(/img/bg-test2.png) ;
+        // background-position:50% 0% ;
+        // background-size: 200%;
     }
     .sc-3{
         // background-color: #EAF3FC;
@@ -496,7 +665,7 @@ footer.footer-area{
 
 }
 @media (max-width: 767.98px) { 
-    $fsz-64: 30px;
+    $fsz-64: 80px;
     $fsz-48: 24px;
     $fsz-24: 16px;
     $fsz-18: 14px;
@@ -505,7 +674,9 @@ footer.footer-area{
         font-size: $fsz-18;
     }
    
-
+    #mouse-scroll {
+        margin-top: 40px;
+      }
     .bg-sc1{
         margin-bottom: 80px;
     }
@@ -524,7 +695,7 @@ footer.footer-area{
     }
     .ct-caption{
         margin-top: 8px;
-        font-size: $fsz-10;
+        font-size: $fsz-24;
         font-weight: $fwg-reg;
         color: $gray1;
     }
@@ -536,7 +707,6 @@ footer.footer-area{
         .title{
             font-size: $fsz-24;
             font-weight: $fwg-reg;
-            color: $gray1;
         }
         .content{
             font-weight: $fwg-reg;
