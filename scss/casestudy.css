@@ -1,0 +1,117 @@
+h2 {
+  color: #4B779D;
+}
+
+h5, p {
+  color: #333;
+}
+
+.text-blue {
+  color: #4B779D;
+}
+
+.bg-cr-1 {
+  background-color: #ffffff;
+}
+
+.bg-cr-2 {
+  background-color: #f8fcff;
+}
+
+.bg-cr-4 {
+  background-color: #FAFAFA;
+}
+
+.card {
+  height: 450px;
+  border-radius: 16px;
+  background-color: #EFFFFC;
+  border: 1px solid #D9E9F6;
+  transition: transform 0.2s;
+  margin-bottom: 40px;
+}
+
+.card:hover {
+  transform: unset;
+  cursor: unset;
+  border: 1px solid #D9E9F6;
+  box-shadow: unset;
+}
+.card:hover .link-anim {
+  bottom: 20px;
+  left: 5%;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.bg-cr-3 {
+  background-color: #E6F8F7;
+}
+
+.bg-cr-3:hover {
+  background-color: #E6F8F7;
+}
+
+.card-image-1 {
+  background-image: url(/img/meditime1.png);
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+
+.card-image-3 {
+  background-image: url(/img/StudyCase/create.png);
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+
+.card-image-4 {
+  background-image: url(/img/StudyCase/nutri.png);
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+
+.card-pros {
+  padding: 1rem;
+  background-color: #F2F8FC;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.card-cons {
+  padding: 1rem;
+  background-color: #FCF5F2;
+  border-radius: 0px 0px 8px 8px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .card-image {
+    background-image: none;
+  }
+}
+@media (max-width: 767.98px) {
+  .card {
+    height: 700px;
+  }
+  .img-thumbnail {
+    height: 15%;
+  }
+  .card-image {
+    background-position: bottom center;
+    background-image: url(/img/meditime1.png);
+  }
+  .card-image-3 {
+    background-image: url(/img/StudyCase/create.png);
+    background-position: bottom center;
+  }
+}/*# sourceMappingURL=casestudy.css.map */
