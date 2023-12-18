@@ -81,6 +81,27 @@ html {
     // color: transparent;
 }
 
+.highlight {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    &:after {
+      background-color: #e3f0fb;
+      content: '';
+      position: absolute;
+      bottom: -.15em;
+      left: -5%;
+      transition: all .25s ease-in-out;
+      // width: 110%;
+      width: 0;
+      height: .65em;
+      z-index: -1;
+    }
+    &:hover:after {
+      width: 110%;
+    }
+  }
+
 .ct-header{
     font-size: $fsz-64;
     font-weight: $fwg-med;

@@ -23,6 +23,26 @@ html {
   -webkit-background-clip: text;
 }
 
+.highlight {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+.highlight:after {
+  background-color: #e3f0fb;
+  content: "";
+  position: absolute;
+  bottom: -0.15em;
+  left: -5%;
+  transition: all 0.25s ease-in-out;
+  width: 0;
+  height: 0.65em;
+  z-index: -1;
+}
+.highlight:hover:after {
+  width: 110%;
+}
+
 .ct-header {
   font-size: 64px;
   font-weight: 500;
