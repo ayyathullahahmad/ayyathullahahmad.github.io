@@ -26,3 +26,4 @@ modal.onclick = function() {
        img01.className = "modal-content";
      }, 400);
 }
+

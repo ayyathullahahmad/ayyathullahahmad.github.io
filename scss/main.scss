@@ -185,9 +185,13 @@ html {
 // styles
 body{
     font-family: 'Poppins', sans-serif;
-    
     scroll-behavior: smooth;
+    background-repeat: no-repeat;
+    background-position: top center;
     // background-color: #fff !important;
+}
+.bg-home{
+    background-image: url(/img/Background.svg) ;
 }
 .wrap-bg{
     width: 100%;
@@ -501,16 +505,23 @@ body{
         line-height: 34px;
     }
 
-    @mixin rect-theme($theme: $wh-col ){
+    @mixin rect-theme($theme: $primary ){
         color: $theme;
-        background-color: $primary;
+        // background-color: $primary;
         border:unset;
-        transition: .2s ease-in-out 0s;
-        margin-left: 8px;
-        margin-right: 0px;
+        // transition: .2s ease-in-out 0s;
+        // margin-left: 8px;
+        margin-right: 16px;
         font-size: 32px;
         text-decoration: unset;
-        text-decoration: none
+        text-decoration: none;
+        /* From https://css.glass */
+        background: rgba(233, 246, 255, 0.48);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7px);
+        -webkit-backdrop-filter: blur(7px);
+        border: 1px solid rgba(233, 246, 255, 0.28);
     }
     .rect-icon-linkedin{
         @include rect-theme;
@@ -520,7 +531,7 @@ body{
         @include rect-theme;
         color: #0e76a8;
         background-color: #e6f5ff;
-        transform: scale(1.2)
+        // transform: scale(0.5)
         
     }
     .rect-icon-wa{
@@ -530,7 +541,7 @@ body{
         @include rect-theme;
         color: #128c7e;
         background-color: #e6f5ff;
-        transform: scale(1.2)
+        // transform: scale(0.5)
     }
     .rect-icon-db{
         @include rect-theme;
@@ -539,7 +550,7 @@ body{
         @include rect-theme;
         color: #ea4c89;
         background-color: #e6f5ff;
-        transform: scale(1.2)
+        // transform: scale(0.5)
     }
 
 }
@@ -916,12 +927,12 @@ footer.footer-area{
             line-height: 34px;
         }
         @mixin rect-theme($theme: $wh-col ){
-            color: $theme;
-            background-color: $primary;
+            // color: $theme;
+            // background-color: $primary;
             border:unset;
-            transition: .2s ease-in-out 0s;
-            margin-left: 8px;
-            margin-right: 0px;
+            // transition: .2s ease-in-out 0s;
+            // margin-left: 8px;
+            margin-right: 8px;
             font-size: 24px;
             text-decoration: unset;
             text-decoration: none
@@ -934,7 +945,7 @@ footer.footer-area{
             @include rect-theme;
             color: #0e76a8;
             background-color: #e6f5ff;
-            transform: scale(1.2)
+            // transform: scale(1.2)
             
         }
         .rect-icon-wa{
@@ -944,7 +955,7 @@ footer.footer-area{
             @include rect-theme;
             color: #128c7e;
             background-color: #e6f5ff;
-            transform: scale(1.2)
+            // transform: scale(1.2)
         }
 
 
