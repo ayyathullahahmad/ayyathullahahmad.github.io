@@ -1,9 +1,10 @@
 h2 {
-  color: #4B779D;
+  color: #1A8887;
+  font-family: "Sora", sans-serif;
 }
 
 h5, p {
-  color: #333;
+  color: #52595f;
 }
 
 .text-blue {
@@ -15,7 +16,7 @@ h5, p {
 }
 
 .bg-cr-2 {
-  background-color: #f8fcff;
+  background-color: #FAFCFB !important;
 }
 
 .bg-cr-4 {
@@ -100,8 +101,17 @@ h5, p {
 
 .card-pros-hor {
   padding: 1rem;
-  background-color: #F2F8FC;
-  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #F2F8FC;
+  border-radius: 16px;
+}
+
+.card-red {
+  background-color: #FCF5F2;
+}
+
+.card-green {
+  background-color: #f7fcf2;
 }
 
 .card-cons-hor {

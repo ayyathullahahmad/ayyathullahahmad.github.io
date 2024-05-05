@@ -10,6 +10,8 @@ $wh-col: #fff;
 $tx-cl: #333333;
 $clr-1: #4f4f4f;
 $clr-2: #3f3f3f;
+$tx-red: #db4e6a;
+$tx-green:#379678;
 
 $primary: #333;
 $secondary: #042032;
@@ -17,6 +19,8 @@ $pm-10: #EEF0F1;
 $gray1: #A6A6A6;
 $gray2: #666666;
 $gray3: #333333;
+
+$green-1: #1A8887;
 
 $fsz-120: 120px;
 $fsz-64: 64px;
@@ -88,6 +92,10 @@ html {
 
 
 //text style
+// h2{
+//     color: $green-1;
+//     font-family: "Sora", sans-serif;
+// }
 .header-bold{
     font-family: "Sora", sans-serif;
     font-size: $fsz-64;
@@ -100,6 +108,15 @@ html {
     background-position: top left;
     
     // color: transparent;
+}
+
+.header-bold2{
+    font-family: "Sora", sans-serif;
+    font-size: $fsz-48;
+    font-weight: $fwg-bd;
+    color: $primary;
+    outline: none;
+    line-height: normal;
 }
 
 .highlight {
@@ -204,6 +221,13 @@ html {
 }
 .bg-port-4:hover{
     background-color: #edfff8;
+}
+
+.clr-red{
+    color: $tx-red;
+}
+.clr-green{
+    color: $tx-green;
 }
 
 
@@ -955,7 +979,7 @@ footer.footer-area{
 }
 @media (max-width: 767.98px) { 
     $fsz-64: 32px;
-    $fsz-48: 18px;
+    $fsz-48: 28px;
     $fsz-24: 16px;
     $fsz-18: 14px;
 
@@ -976,6 +1000,9 @@ footer.footer-area{
 
     .header-bold{
         font-size: $fsz-64;
+    }
+    .header-bold2{
+        font-size: $fsz-48;
     }
     .ct{
         font-weight: $fwg-med;

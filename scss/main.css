@@ -38,6 +38,15 @@ html {
   background-position: top left;
 }
 
+.header-bold2 {
+  font-family: "Sora", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #333;
+  outline: none;
+  line-height: normal;
+}
+
 .highlight {
   cursor: pointer;
   display: inline-block;
@@ -153,6 +162,14 @@ html {
 
 .bg-port-4:hover {
   background-color: #edfff8;
+}
+
+.clr-red {
+  color: #db4e6a;
+}
+
+.clr-green {
+  color: #379678;
 }
 
 body {
@@ -871,7 +888,7 @@ footer.footer-area .widget-about .contact-details li a {
 }
 @media (max-width: 767.98px) {
   .btn-link-custom {
-    font-size: 18px;
+    font-size: 28px;
   }
   .modal-content {
     width: 100%;
@@ -885,9 +902,12 @@ footer.footer-area .widget-about .contact-details li a {
   .header-bold {
     font-size: 32px;
   }
+  .header-bold2 {
+    font-size: 28px;
+  }
   .ct {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 28px;
     color: #333333;
     letter-spacing: 1.5%;
   }
