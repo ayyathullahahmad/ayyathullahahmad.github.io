@@ -230,6 +230,16 @@ html {
     color: $tx-green;
 }
 
+.ic-18-green{
+    font-size: $fsz-18;
+    color: $tx-green;
+}
+
+.ic-18-red{
+    font-size: $fsz-18;
+    color: $tx-red;
+}
+
 
 
 
@@ -798,7 +808,7 @@ body{
 footer.footer-area{
     background-color: $pm-10;
     border-top: 1px solid $wh-col;
-    margin-top: 64px;
+    // margin-top: 64px;
     ul {
         padding:0;
         margin:0

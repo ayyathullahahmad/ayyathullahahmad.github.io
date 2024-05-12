@@ -3,7 +3,7 @@ h2 {
   font-family: "Sora", sans-serif;
 }
 
-h5, p {
+h4, h5, h6, p {
   color: #52595f;
 }
 
@@ -12,7 +12,7 @@ h5, p {
 }
 
 .bg-cr-1 {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 
 .bg-cr-2 {

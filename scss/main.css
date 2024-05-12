@@ -172,6 +172,16 @@ html {
   color: #379678;
 }
 
+.ic-18-green {
+  font-size: 18px;
+  color: #379678;
+}
+
+.ic-18-red {
+  font-size: 18px;
+  color: #db4e6a;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
@@ -742,7 +752,6 @@ body {
 footer.footer-area {
   background-color: #EEF0F1;
   border-top: 1px solid #fff;
-  margin-top: 64px;
 }
 footer.footer-area ul {
   padding: 0;
