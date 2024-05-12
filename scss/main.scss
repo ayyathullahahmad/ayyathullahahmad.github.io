@@ -274,9 +274,14 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.5;
+    // opacity: 0.5;
     z-index: 2;
+    animation: mymove 12s infinite;
 }
+@keyframes mymove {
+    50% {opacity: 0;}
+    50% { filter: blur(5px);}
+  }
 .bg-overlay{
     position: absolute;
   top: 0;
