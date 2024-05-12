@@ -752,6 +752,7 @@ body {
 footer.footer-area {
   background-color: #EEF0F1;
   border-top: 1px solid #fff;
+  margin-top: 120px;
 }
 footer.footer-area ul {
   padding: 0;
