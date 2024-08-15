@@ -223,6 +223,20 @@ html {
     background-color: #edfff8;
 }
 
+.surface-white{
+    background-color: $wh-col;
+}
+
+.box-shd{
+/* https://smoothshadows.com/#djEsMSwzLDAuMDUsMTAxLC0yLDAsIzAzMDcxMiwjZjNmNGY2LCNmZmZmZmYsMg%3D%3D */
+    box-shadow: 0px -0px 11px rgba(3, 7, 18, 0.02),
+    0px -1px 45px rgba(3, 7, 18, 0.03),
+    0px -2px 101px rgba(3, 7, 18, 0.05);
+
+}
+.clr-g-80{
+    color: $clr-1;
+}
 .clr-red{
     color: $tx-red;
 }
@@ -281,6 +295,23 @@ body{
 @keyframes mymove {
     50% {opacity: 0;}
     50% { filter: blur(5px);}
+  }
+
+  .sticky-sc {
+    position: sticky;
+    top: -40vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .overlap-content {
+    position: relative;
+    z-index: 1;
+    // background-color: #ffffff;
+    margin-top: 10vh; /* This will push the main content below the hero */
   }
 .bg-overlay{
     position: absolute;
@@ -789,7 +820,10 @@ body{
 }
 
 .sc-3{
-    background-color: #DFFFDE;
+    // background-color: #DFFFDE;
+    background: rgba(255, 255, 255, 0.40);  /* Transparansi putih */
+    backdrop-filter: blur(10px);  /* Efek blur */
+    -webkit-backdrop-filter: blur(10px);  /* Untuk kompatibilitas dengan Safari */
     padding: 64px 0 0 0;
 }
 .sc-4{
@@ -813,7 +847,9 @@ body{
 footer.footer-area{
     background-color: $pm-10;
     border-top: 1px solid $wh-col;
-    margin-top: 120px;
+    // margin-top: 120px;
+    position: relative;
+    z-index: 1;
     ul {
         padding:0;
         margin:0
@@ -999,7 +1035,7 @@ footer.footer-area{
     $fsz-18: 14px;
 
     .btn-link-custom{
-        font-size: $fsz-48;
+        font-size: $fsz-24;
     }
 
     .modal-content {
